@@ -147,3 +147,13 @@ Coordinator Agent
         │
 Google Gemini API
 
+
+## Screenshots
+
+### Swagger UI
+
+![Swagger UI](Images/swagger_ui.png)
+
+### Quiz Output
+
+![Quiz Output](Images/quiz_output.png)
