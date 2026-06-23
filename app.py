@@ -10,10 +10,21 @@ def coordinator(query):
     if "quiz" in query:
         return quiz(query)
 
-    elif "plan" in query or "learn" in query:
+    elif (
+        "plan" in query or
+        "learn" in query or
+        "study" in query or
+        "schedule" in query
+    ):
         return planner(query)
 
-    elif "career" in query or "become" in query:
+    elif (
+        "career" in query or
+        "become" in query or
+        "resume" in query or
+        "job" in query or
+        "linkedin" in query
+    ):
         return career(query)
 
     else:

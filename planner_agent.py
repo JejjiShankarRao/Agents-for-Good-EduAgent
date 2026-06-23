@@ -1,6 +1,9 @@
+import os
+from dotenv import load_dotenv
 import google.generativeai as genai
+load_dotenv()
 
-genai.configure(api_key="GEMINI-API_KEY")
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 model = genai.GenerativeModel("gemini-2.5-flash")
 
@@ -10,4 +13,4 @@ def planner(query):
         f"Create a study plan for: {query}"
     )
 
-    return response.text
+    return "Planner Agent:\n\n" + response.text
